@@ -1,0 +1,20 @@
+name: HostnameGuard
+version: ${project.version}
+main: dev.kokoto.hostnameguard.HostnameGuardPlugin
+author: kokoto
+description: Whitelist Minecraft server join hostnames and block direct IP joins.
+commands:
+  hostnameguard:
+    description: HostnameGuard management command
+    usage: /hostnameguard <reload|status>
+    aliases: [hg]
+permissions:
+  hostnameguard.reload:
+    description: Allows reloading HostnameGuard config
+    default: op
+  hostnameguard.status:
+    description: Allows viewing HostnameGuard status
+    default: op
+  hostnameguard.bypass:
+    description: Allows bypassing hostname checks
+    default: false

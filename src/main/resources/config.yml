@@ -1,0 +1,27 @@
+# HostnameGuard
+# 허용한 주소로 접속한 유저만 통과시킵니다.
+# 서버마다 이 파일만 다르게 바꿔 쓰면 됩니다.
+
+allowed-hosts:
+  - "mc.example.com"
+  - "play.example.com"
+
+# true면 wildcard-hosts의 *.example.com 같은 패턴을 허용합니다.
+allow-wildcards: true
+
+wildcard-hosts:
+  - "*.example.com"
+
+# 접속 주소를 읽지 못했을 때 허용할지 여부입니다.
+# 보통 false 권장.
+allow-unknown-host: false
+
+# 권한 우회 기능입니다.
+# false 권장. true로 켜면 hostnameguard.bypass 권한 보유자는 검사하지 않습니다.
+enable-bypass-permission: false
+bypass-permission: "hostnameguard.bypass"
+
+kick-message: "&c공식 주소 &fmc.example.com &c으로 접속해주세요."
+
+log-denied: true
+log-allowed: false
