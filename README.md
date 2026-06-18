@@ -2,6 +2,8 @@
 
 A plugin for Minecraft Bukkit/Spigot/Paper-based servers that checks the hostname used by clients when they connect and only allows approved domains.
 
+<img width="1600" height="900" alt="Image" src="https://github.com/user-attachments/assets/b255bb2d-92a3-4fd7-b549-5d4168cb3f5e" />
+
 ## Changes: 1.0.1
 
 - Removed `api-version` from `plugin.yml` to avoid cases where some Paper/Hybrid servers reject the plugin because of `api-version: '1.21'`.
